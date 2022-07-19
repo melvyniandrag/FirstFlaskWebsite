@@ -3,13 +3,19 @@
 First install some stuff:
 
 ```
-root@machine$ apt install python3-dev apache2 libapache2-mod-wsgi-py3 python3-pip
+root@machine$ apt install python3-dev apache2 libapache2-mod-wsgi-py3 python3-pip git
 root@machine$ pip3 install flask
 ```
 
 ## Deploy your first website:
 
 Clone this repo to your server
+
+`git clone https://github.com/melvyniandrag/FirstFlaskWebsite.git`
+
+Then do the following:
+
+`cd FirstFlaskWebsite`
 
 `mv Code /var/www/html`
 
