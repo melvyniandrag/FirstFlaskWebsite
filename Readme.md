@@ -21,13 +21,18 @@ Then do the following:
 
 `cp ConfigFiles/WebsiteThatReturnsHTML.conf /etc/apache2/sites-available`
 
+Now edit  `/etc/apache2/sites-available/WebsiteThatReturnsHTML.conf` so that it has YOUR ip address for the ServerName. Use vim to edit this file. I told you that you need to learn a text editor!
+
+Disable the old apache default page we saw before
 `a2dissite 000-default.conf`
 
+Enable your new Flask website
 `a2ensite WebsiteThatReturnsHTML.conf`
 
+Restart apache2
 `service apache2 restart`
 
-Done!
+Done! Take out your cellphone and type your ip address into your browser. Your website is there! Congratulations on this major accomplishment.
 
 Then if you want you can edit /var/www/html/Code/my_flask_site.py to change what is shown on your website.
 
